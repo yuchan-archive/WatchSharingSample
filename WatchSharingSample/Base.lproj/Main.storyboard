@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJZ-LF-wpP">
-                                <rect key="frame" x="217" y="84" width="166" height="30"/>
+                                <rect key="frame" x="249" y="199" width="102" height="30"/>
                                 <state key="normal" title="Send to Watch">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,13 +25,32 @@
                                     <action selector="sendToWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSs-ke-KnZ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-0N-e21">
+                                <rect key="frame" x="205" y="140" width="190" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="CgO-7O-l9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lJZ-LF-wpP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="201" id="QRI-sE-hVX"/>
-                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="lJZ-LF-wpP" secondAttribute="trailing" constant="201" id="S7o-l3-7Fj"/>
-                            <constraint firstItem="lJZ-LF-wpP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="bCh-W6-VBV"/>
+                            <constraint firstItem="lJZ-LF-wpP" firstAttribute="top" secondItem="wPY-0N-e21" secondAttribute="bottom" constant="30" id="5rw-XL-3mt"/>
+                            <constraint firstAttribute="centerY" secondItem="wPY-0N-e21" secondAttribute="centerY" constant="146" id="B6D-Z2-hwI"/>
+                            <constraint firstAttribute="centerY" secondItem="lJZ-LF-wpP" secondAttribute="centerY" constant="192" id="W2v-Hn-I1v"/>
+                            <constraint firstItem="wPY-0N-e21" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="WoS-rA-AJL"/>
+                            <constraint firstAttribute="centerX" secondItem="lJZ-LF-wpP" secondAttribute="centerX" id="lLF-fH-b3S"/>
+                            <constraint firstItem="wPY-0N-e21" firstAttribute="centerX" secondItem="lJZ-LF-wpP" secondAttribute="centerX" id="vP9-Dx-wUj"/>
+                            <constraint firstItem="lJZ-LF-wpP" firstAttribute="top" secondItem="wPY-0N-e21" secondAttribute="bottom" constant="29" id="wGM-YK-myO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B6D-Z2-hwI"/>
+                                <exclude reference="5rw-XL-3mt"/>
+                                <exclude reference="W2v-Hn-I1v"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="sendButton" destination="lJZ-LF-wpP" id="gY4-Yg-QuA"/>

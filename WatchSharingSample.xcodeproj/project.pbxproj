@@ -62,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		702F0CCB1AB7B80700BEA002 /* WatchSharingSample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchSharingSample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		70444C8C1AB27DFE006D00CA /* WatchSharingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSharingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70444C901AB27DFE006D00CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70444C911AB27DFE006D00CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 		70444CBB1AB27E3B006D00CA /* WatchSharingSample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				702F0CCB1AB7B80700BEA002 /* WatchSharingSample WatchKit Extension.entitlements */,
 				70444CBF1AB27E3B006D00CA /* InterfaceController.h */,
 				70444CC01AB27E3B006D00CA /* InterfaceController.m */,
 				70444CC21AB27E3B006D00CA /* NotificationController.h */,
@@ -317,6 +319,11 @@
 					70444CB91AB27E3B006D00CA = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = KHFXF6N2QE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					70444CC81AB27E3B006D00CA = {
 						CreatedOnToolsVersion = 6.2;
@@ -548,7 +555,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e933cefb-a9ed-4af5-88e5-58e18d046a5b";
 			};
 			name = Debug;
 		};
@@ -563,7 +570,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e933cefb-a9ed-4af5-88e5-58e18d046a5b";
 			};
 			name = Release;
 		};
@@ -636,6 +643,8 @@
 		70444CDC1AB27E3C006D00CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchSharingSample WatchKit Extension/WatchSharingSample WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -645,19 +654,26 @@
 				INFOPLIST_FILE = "WatchSharingSample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchSharingSample WatchKit Extension/WatchSharingSample WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		70444CDD1AB27E3C006D00CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "WatchSharingSample WatchKit Extension/WatchSharingSample WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchSharingSample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchSharingSample WatchKit Extension/WatchSharingSample WatchKit Extension-Bridging-Header.h";
 			};
 			name = Release;
 		};

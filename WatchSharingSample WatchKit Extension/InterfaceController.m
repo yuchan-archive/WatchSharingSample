@@ -36,7 +36,8 @@
 {
     NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName: @"group.me.junkpiano.ios.GroupSample"];
     // Use the shared user defaults object to update the user's account
-    self.textLabel.text = (NSString *)[mySharedDefaults objectForKey:@"name"];
+    NSString *str = [mySharedDefaults stringForKey:@"name"];
+    self.textLabel.text = str;
 }
 
 @end
