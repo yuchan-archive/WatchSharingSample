@@ -28,11 +28,24 @@
     NSFileManager* fileManager = [NSFileManager defaultManager];
     NSURL* storeUrl = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.me.junkpiano.ios.GroupSample"];
     NSLog(@"%@", storeUrl.absoluteString);
+    [self updateView:nil];
 }
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+- (void)handleUserActivity:(NSDictionary *)userInfo
+{
+    if (userInfo) {
+        [self pushControllerWithName:@"NextInterfaceController" context:nil];
+    }
+}
+
+- (void)handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)localNotification
+{
+    
 }
 
 - (IBAction)updateView:(id)sender

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703C79E61ABAAEA60093E822 /* NextInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703C79E51ABAAEA60093E822 /* NextInterfaceController.m */; };
+		703C79EB1ABAAFDB0093E822 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703C79EA1ABAAFDB0093E822 /* GlanceController.m */; };
 		70444C921AB27DFE006D00CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70444C911AB27DFE006D00CA /* main.m */; };
 		70444C951AB27DFE006D00CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70444C941AB27DFE006D00CA /* AppDelegate.m */; };
 		70444C981AB27DFE006D00CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70444C971AB27DFE006D00CA /* ViewController.m */; };
@@ -63,6 +65,10 @@
 
 /* Begin PBXFileReference section */
 		702F0CCB1AB7B80700BEA002 /* WatchSharingSample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchSharingSample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		703C79E41ABAAEA60093E822 /* NextInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextInterfaceController.h; sourceTree = "<group>"; };
+		703C79E51ABAAEA60093E822 /* NextInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextInterfaceController.m; sourceTree = "<group>"; };
+		703C79E91ABAAFDB0093E822 /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		703C79EA1ABAAFDB0093E822 /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		70444C8C1AB27DFE006D00CA /* WatchSharingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSharingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70444C901AB27DFE006D00CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70444C911AB27DFE006D00CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -188,6 +194,10 @@
 				70444CC01AB27E3B006D00CA /* InterfaceController.m */,
 				70444CC21AB27E3B006D00CA /* NotificationController.h */,
 				70444CC31AB27E3B006D00CA /* NotificationController.m */,
+				703C79E91ABAAFDB0093E822 /* GlanceController.h */,
+				703C79EA1ABAAFDB0093E822 /* GlanceController.m */,
+				703C79E41ABAAEA60093E822 /* NextInterfaceController.h */,
+				703C79E51ABAAEA60093E822 /* NextInterfaceController.m */,
 				70444CC51AB27E3B006D00CA /* Images.xcassets */,
 				70444CBC1AB27E3B006D00CA /* Supporting Files */,
 			);
@@ -413,8 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703C79E61ABAAEA60093E822 /* NextInterfaceController.m in Sources */,
 				70444CC41AB27E3B006D00CA /* NotificationController.m in Sources */,
 				70444CC11AB27E3B006D00CA /* InterfaceController.m in Sources */,
+				703C79EB1ABAAFDB0093E822 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

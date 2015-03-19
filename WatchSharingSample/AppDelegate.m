@@ -52,4 +52,9 @@
     NSLog(@"Nice to meet Watch.");
     reply(@{@"message":@"Welcome back!"});
 }
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void (^)())completionHandler
+{
+    
+}
 @end

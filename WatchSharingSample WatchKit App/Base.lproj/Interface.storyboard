@@ -5,6 +5,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
+        <!--Glance Interface Controller-->
+        <scene sceneID="R11-e6-7v2">
+            <objects>
+                <glanceController id="mLV-mr-WMl" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="UYe-gO-bcw">
+                            <items>
+                                <label alignment="left" text="Glance" id="epd-sU-yYI"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="3vj-pU-qOx"/>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="218" y="126"/>
+        </scene>
+        <!--NextInterfaceController-->
+        <scene sceneID="yzK-hQ-N9S">
+            <objects>
+                <controller identifier="NextInterfaceController" id="PLP-3s-is5" customClass="NextInterfaceController"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="122"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -37,7 +60,7 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
