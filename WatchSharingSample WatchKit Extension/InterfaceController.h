@@ -12,5 +12,6 @@
 @interface InterfaceController : WKInterfaceController
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *textLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *updateButton;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *hiButton;
 
 @end

@@ -46,4 +46,10 @@
 {
     
 }
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
+{
+    NSLog(@"Nice to meet Watch.");
+    reply(@{@"message":@"Welcome back!"});
+}
 @end

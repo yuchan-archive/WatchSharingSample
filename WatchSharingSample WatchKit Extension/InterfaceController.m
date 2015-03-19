@@ -25,6 +25,9 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSURL* storeUrl = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.me.junkpiano.ios.GroupSample"];
+    NSLog(@"%@", storeUrl.absoluteString);
 }
 
 - (void)didDeactivate {
@@ -40,6 +43,16 @@
     self.textLabel.text = str;
 }
 
+- (IBAction)hiIphone:(id)sender
+{
+    [[self class] openParentApplication:@{@"message":@"Hi iPhone, from Watch."} reply:^(NSDictionary *replyInfo, NSError *error) {
+        if (replyInfo) {
+            NSLog(@"Welcome back");
+        }else{
+            NSLog(@"failed.");
+        }
+    }];
+}
 @end
 
 

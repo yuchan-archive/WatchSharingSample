@@ -16,8 +16,15 @@
                                 <action selector="updateView:" destination="AgC-eL-Hgc" id="bL7-Rg-4qk"/>
                             </connections>
                         </button>
+                        <separator alignment="left" id="GLe-dS-nRd"/>
+                        <button width="1" alignment="left" title="Hi, iPhone!" id="h0J-mH-n4o">
+                            <connections>
+                                <action selector="hiIphone:" destination="AgC-eL-Hgc" id="dt3-F9-e8y"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="hiButton" destination="h0J-mH-n4o" id="dDn-QR-WxO"/>
                         <outlet property="textLabel" destination="5lM-ch-zx2" id="E9P-v1-xTH"/>
                         <outlet property="updateButton" destination="pBN-5t-ABG" id="rCw-0e-qCM"/>
                     </connections>
